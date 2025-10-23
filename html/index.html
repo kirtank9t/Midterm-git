@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/darkmodetoggle.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left-section">
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <div class="button-group">
+                    <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark">dark</button>
+                    <button class="btn btn-light btn-sm" data-bs-theme-value="light">light</button>
+                    <button class="btn btn-secondary btn-sm" id="Contact"><a href="#">Contact Me</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <p> Factorial calculator.</p>
+                <br>
+                <p>n! 1x2x3x...xn.</p>
+                <br>
+                <p>e.g. 5! = 120</p>
+                <br>
+                <button class="btn btn-light btn-sm" onclick="factorial()">Enter</button>
+            </div>
+            <div class="grid-item item2"><input type="text" class="form-control form-control-lg w-100" placeholder="Enter a number here." id="input"></div>
+            <div class="grid-item item3" id="output"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Simple factorial calculator @2025
+    </footer>
+</body>
+</html>
